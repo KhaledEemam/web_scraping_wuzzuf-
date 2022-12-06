@@ -105,7 +105,7 @@ if total_jobs > 0:
     exported = zip_longest(*file_list)
     with open(file_name, "w", newline='') as my_file:
         wr = csv.writer(my_file)
-        wr.writerow(["job title", "Experience Needed", "Location", "Posted date", "Salary", "Companiey", "Job type",
+        wr.writerow(["job title", "Experience Needed", "Location", "Posted date", "Salary", "Company", "Job type",
                      "Description", "Requirements", "Job link"])
         wr.writerows(exported)
     print("All available jobs for {} are extracted successfully".format(search_keyword))
